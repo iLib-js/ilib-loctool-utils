@@ -25,13 +25,12 @@
       <comment>energy</comment>
       <translation>최소 절전</translation>
     </message>
-<message>
+    <message>
       <location filename="LocalizationToolTest.qml"></location>
       <source>Minidfsdfsfdfum</source>
       <comment>enersdfsdfgy</comment>
       <translation>최소 절전</translation>
     </message>
-
   </context>
  <context>
     <name>single-text</name>
@@ -39,14 +38,6 @@
       <location filename="single-text.qml"></location>
       <source>Hello World</source>
       <translation>안녕하세요</translation>
-    </message>
-  </context>
-  <context>
-    <name>Main</name>
-    <message>
-      <location filename="Main.qml"></location>
-      <source>I18N Qt/QML SUITE</source>
-      <translation>I18N Qt/QML 검증</translation>
     </message>
   </context>
 </TS>

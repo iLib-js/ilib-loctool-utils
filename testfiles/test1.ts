@@ -54,12 +54,4 @@
       <translation>안녕하세요</translation>
     </message>
   </context>
-  <context>
-    <name>Main</name>
-    <message>
-      <location filename="Main.qml"></location>
-      <source>I18N Qt/QML SUITE</source>
-      <translation>I18N Qt/QML 검증</translation>
-    </message>
-  </context>
 </TS>
