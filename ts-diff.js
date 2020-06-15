@@ -165,7 +165,7 @@ function compareFile (resourceData, resourceDataNew) {
 function result() {
     console.log("============================= [ Result ] ============================= ");
     console.log("Total Removed File Num: " + removedFile.length);
-    console.log("Total Removed Strig Num: " + removedString.length);
+    console.log("Total Removed String Num: " + removedString.length);
     console.log("Total Added File Num: " + newFile.length);
     console.log("Total Added String Num: " + newString.length);
     console.log("============================= [ detail ] ============================= ");
