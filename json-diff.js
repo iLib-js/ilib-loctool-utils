@@ -45,7 +45,7 @@ var jsonNew = process.argv[3];
 var resourceObj, resourceObjNew;
 var newString = [], removedString = [];
 
-function readJsons(jsonOrg, jsonNew) {
+function readJSONs(jsonOrg, jsonNew) {
     if (!fs.existsSync(jsonOrg)) {
         util.error("Could not access file: " + jsonOrg);
         usage();
@@ -60,6 +60,7 @@ function readJsons(jsonOrg, jsonNew) {
         resourceNewObj = require(path.resolve(jsonNew));
     }
 }
+
 function compareFile(resourceObj, resourceNewObj) {
     for (var item in resourceObj) {
         if (!resourceNewObj.hasOwnProperty(item)) {
@@ -72,7 +73,6 @@ function compareFile(resourceObj, resourceNewObj) {
             newString.push(item);
         }
     }
-
 }
 
 function result() {
@@ -90,6 +90,6 @@ function result() {
     });
 }
 
-readJsons(jsonOrg, jsonNew);
+readJSONs(jsonOrg, jsonNew);
 compareFile(resourceObj, resourceNewObj);
 result();
