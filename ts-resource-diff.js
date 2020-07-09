@@ -175,7 +175,7 @@ function result() {
     });
     
     removedString.forEach(function (element){
-        console.log("RemovedString: ", element);
+        console.log("Removed String: ", element);
     });
     
     newString.forEach(function (element){

@@ -77,12 +77,12 @@ function compareFile(resourceObj, resourceNewObj) {
 
 function result() {
     console.log("============================= [ Result ] ============================= ");
-    console.log("Total Removed Strig Num: " + removedString.length);
+    console.log("Total Removed String Num: " + removedString.length);
     console.log("Total Added String Num: " + newString.length);
     console.log("============================= [ detail ] ============================= ");
 
     removedString.forEach(function (element){
-        console.log("RemovedString: ", element);
+        console.log("Removed String: ", element);
     });
     
     newString.forEach(function (element){
