@@ -1,5 +1,5 @@
 /*
- * json-diff.js - JSON file diff.
+ * json-resource-diff.js - JSON resource file comparison.
  *
  * Copyright © 2020, JEDLSoft
  *

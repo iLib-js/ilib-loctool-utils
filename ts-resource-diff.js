@@ -1,5 +1,5 @@
 /*
- * ts-diff.js - TS file diff.
+ * ts-resource-diff.js - TS resource file comparison.
  *
  * Copyright © 2020, JEDLSoft
  *
@@ -90,7 +90,7 @@ function readXmls(xmlOrg, xmlNew) {
             trim: false
         });
         resourceDataNew = jsonNew.TS.context;
-    }    
+    }
 }
 
 function compareArray(filename, arrayOrg, arrayNew) {
@@ -108,7 +108,7 @@ function compareArray(filename, arrayOrg, arrayNew) {
             if (comment !== ""){
                 str = str + comment;
             }
-            removedString.push(str);   
+            removedString.push(str);
         }
     }
     for (var i=0; i< arrNew.length; i++) {
@@ -141,7 +141,7 @@ function compareFile (resourceData, resourceDataNew) {
             }
         })
         if (temp.length != 0) {
-            compareArray(filename, resourceData[i].message, temp[0].message);    
+            compareArray(filename, resourceData[i].message, temp[0].message);
         }
         else {
             removedFile.push(filename);
