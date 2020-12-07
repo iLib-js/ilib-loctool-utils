@@ -132,25 +132,28 @@ function compareArray(filename, arrayOrg, arrayNew) {
 
 function compareFile (resourceData, resourceDataNew) {
     var filename;
-    for (var i= 0; i < resourceData.length; i++) {
-        filename = resourceData[i].name.$t;
+    var resourceDataArr = isArray(resourceData)? resourceData :[resourceData];
+    var resourceDataNewArr = isArray(resourceDataNew)? resourceDataNew :[resourceDataNew];
+
+    for (var i= 0; i < resourceDataArr.length; i++) {
+        filename = resourceDataArr[i].name.$t;
         
-        var temp = resourceDataNew.filter(function(element){
+        var temp = resourceDataNewArr.filter(function(element){
             if (element.name.$t === filename) {
                 return element
             }
         })
         if (temp.length != 0) {
-            compareArray(filename, resourceData[i].message, temp[0].message);
+            compareArray(filename, resourceDataArr[i].message, temp[0].message);
         }
         else {
             removedFile.push(filename);
         }
     }
 
-    for (var i= 0; i < resourceDataNew.length; i++) {
-        filename = resourceDataNew[i].name.$t;
-        var temp = resourceData.filter(function(element){
+    for (var i= 0; i < resourceDataNewArr.length; i++) {
+        filename = resourceDataNewArr[i].name.$t;
+        var temp = resourceDataArr.filter(function(element){
             if (element.name.$t === filename) {
                 return element
             }
